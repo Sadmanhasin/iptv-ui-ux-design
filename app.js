@@ -101,7 +101,7 @@
 
   // ---- click gate ----
   // UI-only controls that never need sign-in
-  const FREE = '.nav-arrow, .nav-pill, .date-tabs button, .theme-button, .language-button, .menu-button, .brand, .account-button, .signin-btn, .signin-alt button, .live-view button, .pm-sidebar button, .site-footer button';
+  const FREE = '.nav-arrow, .nav-pill, .date-tabs button, .theme-button, .language-button, .menu-button, .brand, .account-button, .signin-btn, .signin-alt button, .live-view button, .pm-sidebar button, .site-footer button, .hero-ctrl';
   // Buttons that open a stream (go to the watch page even when signed in)
   const WATCH = '.watch-btn, .card-action, .ticker-item, .floating';
   document.addEventListener('click', (e) => {

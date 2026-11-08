@@ -82,11 +82,40 @@
     </ul>
   </aside>
   <main class="page">
-    <article class="featured">
-      <div class="featured-top"><div class="league"><span class="league-badge">LL</span>La Liga</div><span class="live-badge">● LIVE 68'</span></div>
-      <div class="featured-score"><div class="team"><div class="team-logo">FCB</div>Barcelona</div><div class="score">2 – 1<small>Live · 68'</small></div><div class="team"><div class="team-logo">RMA</div>Real Madrid</div></div>
-      <button class="watch-btn" data-toast="Opening live stream">▶ &nbsp;Watch</button>
-    </article>
+    <section class="hero-slider" aria-roledescription="carousel" aria-label="Live matches">
+      <div class="hero-viewport">
+        <div class="hero-track" aria-live="off">
+        <article class="featured" role="group" aria-roledescription="slide" aria-label="1 of 4: Barcelona vs Real Madrid">
+          <div class="featured-top"><div class="league"><span class="league-badge">LL</span>La Liga</div><span class="live-badge">● LIVE 68'</span></div>
+          <div class="featured-score"><div class="team"><div class="team-logo">FCB</div>Barcelona</div><div class="score">2 – 1<small>Live · 68'</small></div><div class="team"><div class="team-logo">RMA</div>Real Madrid</div></div>
+          <button class="watch-btn" data-toast="Opening Barcelona vs Real Madrid">▶ &nbsp;Watch</button>
+        </article>
+        <article class="featured" role="group" aria-roledescription="slide" aria-label="2 of 4: Manchester City vs Brighton" inert>
+          <div class="featured-top"><div class="league"><span class="league-badge">LC</span>League Cup</div><span class="live-badge">● LIVE 73'</span></div>
+          <div class="featured-score"><div class="team"><div class="team-logo">MC</div>Manchester City</div><div class="score">1 – 1<small>Live · 73'</small></div><div class="team"><div class="team-logo">BHA</div>Brighton</div></div>
+          <button class="watch-btn" data-toast="Opening Manchester City vs Brighton">▶ &nbsp;Watch</button>
+        </article>
+        <article class="featured" role="group" aria-roledescription="slide" aria-label="3 of 4: Liverpool vs Chelsea" inert>
+          <div class="featured-top"><div class="league"><span class="league-badge">PL</span>Premier League</div><span class="live-badge">● LIVE 41'</span></div>
+          <div class="featured-score"><div class="team"><div class="team-logo">LFC</div>Liverpool</div><div class="score">0 – 0<small>Live · 41'</small></div><div class="team"><div class="team-logo">CFC</div>Chelsea</div></div>
+          <button class="watch-btn" data-toast="Opening Liverpool vs Chelsea">▶ &nbsp;Watch</button>
+        </article>
+        <article class="featured" role="group" aria-roledescription="slide" aria-label="4 of 4: Bayern vs Dortmund" inert>
+          <div class="featured-top"><div class="league"><span class="league-badge">BL</span>Bundesliga</div><span class="live-badge">● LIVE 55'</span></div>
+          <div class="featured-score"><div class="team"><div class="team-logo">FCB</div>Bayern</div><div class="score">1 – 0<small>Live · 55'</small></div><div class="team"><div class="team-logo">BVB</div>Dortmund</div></div>
+          <button class="watch-btn" data-toast="Opening Bayern vs Dortmund">▶ &nbsp;Watch</button>
+        </article>
+        </div>
+      </div>
+      <button class="hero-arrow hero-ctrl prev" aria-label="Previous live match"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="hero-arrow hero-ctrl next" aria-label="Next live match"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      <div class="hero-dots">
+        <button class="hero-dot hero-ctrl active" aria-label="Show Barcelona vs Real Madrid" aria-current="true"><span></span></button>
+        <button class="hero-dot hero-ctrl" aria-label="Show Manchester City vs Brighton"><span></span></button>
+        <button class="hero-dot hero-ctrl" aria-label="Show Liverpool vs Chelsea"><span></span></button>
+        <button class="hero-dot hero-ctrl" aria-label="Show Bayern vs Dortmund"><span></span></button>
+      </div>
+    </section>
     <div class="section-heading"><span class="dot"></span><h2>Live now</h2><span class="count">4</span><button class="view-all">View all →</button></div>
     <div class="matches">
       <article class="match-card"><div class="match-head"><span><span class="league-dot" aria-hidden="true"></span> &nbsp;League Cup</span><span class="match-head-actions"><button class="card-action" data-toast="Opening Manchester City vs Brighton" aria-label="Watch Manchester City vs Brighton live"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>Watch</button><span class="live">● LIVE 73'</span></span></div><div class="match-teams"><div class="mini-team">Manchester City<em>MC</em></div><div class="mini-score">1 – 1</div><div class="mini-team">Brighton<em>BHA</em></div></div></article>
@@ -102,41 +131,41 @@
       </div>
       <div class="upcoming-grid" data-day="oct28" role="tabpanel">
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>Premier League</strong><span>28 Oct, 8:30 PM</span></div><button class="bell" aria-label="Remind me: Arsenal vs Chelsea" aria-pressed="false" data-remind="Arsenal vs Chelsea"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>Premier League</strong><span>28 Oct, 8:30 PM</span></div></div>
           <div class="up-teams"><span class="crest shield" style="background:#d71920">ARS</span><span>Arsenal</span><span class="vs">vs</span><span class="t-right">Chelsea</span><span class="crest " style="background:#0a4ea3">CHE</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5l5 5-8.5 8.5-3-2-2-3z"/><path d="M8 16l-4 4"/><circle cx="18.5" cy="18.5" r="2"/></svg></span><div class="up-league"><strong>BPL</strong><span>28 Oct, 6:00 PM</span></div><button class="bell" aria-label="Remind me: Dhaka Capitals vs Chattogram" aria-pressed="false" data-remind="Dhaka Capitals vs Chattogram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5l5 5-8.5 8.5-3-2-2-3z"/><path d="M8 16l-4 4"/><circle cx="18.5" cy="18.5" r="2"/></svg></span><div class="up-league"><strong>BPL</strong><span>28 Oct, 6:00 PM</span></div></div>
           <div class="up-teams"><span class="crest shield" style="background:#c9971c">DC</span><span>Dhaka Capitals</span><span class="vs">vs</span><span class="t-right">Chattogram</span><span class="crest shield" style="background:#c4161c">CHT</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5l1.5 3.3 3.6.4-2.7 2.4.8 3.6L12 14.4l-3.2 1.8.8-3.6-2.7-2.4 3.6-.4z"/></svg></span><div class="up-league"><strong>UEFA Champions League</strong><span>28 Oct, 11:59 PM</span></div><button class="bell" aria-label="Remind me: Man City vs Inter" aria-pressed="false" data-remind="Man City vs Inter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5l1.5 3.3 3.6.4-2.7 2.4.8 3.6L12 14.4l-3.2 1.8.8-3.6-2.7-2.4 3.6-.4z"/></svg></span><div class="up-league"><strong>UEFA Champions League</strong><span>28 Oct, 11:59 PM</span></div></div>
           <div class="up-teams"><span class="crest " style="background:#6cabdd">MCI</span><span>Man City</span><span class="vs">vs</span><span class="t-right">Inter</span><span class="crest " style="background:#0b3d91">INT</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>La Liga</strong><span>28 Oct, 9:00 PM</span></div><button class="bell" aria-label="Remind me: Barcelona vs Sevilla" aria-pressed="false" data-remind="Barcelona vs Sevilla"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>La Liga</strong><span>28 Oct, 9:00 PM</span></div></div>
           <div class="up-teams"><span class="crest shield" style="background:#a50044">FCB</span><span>Barcelona</span><span class="vs">vs</span><span class="t-right">Sevilla</span><span class="crest " style="background:#d81e05">SEV</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8-7.5 9.5-4.3-1.5-7.5-5-7.5-9.5V6z"/><path d="M8.5 12h7M12 8.5v7"/></svg></span><div class="up-league"><strong>Bundesliga</strong><span>28 Oct, 7:30 PM</span></div><button class="bell" aria-label="Remind me: Leipzig vs Frankfurt" aria-pressed="false" data-remind="Leipzig vs Frankfurt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8-7.5 9.5-4.3-1.5-7.5-5-7.5-9.5V6z"/><path d="M8.5 12h7M12 8.5v7"/></svg></span><div class="up-league"><strong>Bundesliga</strong><span>28 Oct, 7:30 PM</span></div></div>
           <div class="up-teams"><span class="crest " style="background:#dd0741">RBL</span><span>Leipzig</span><span class="vs">vs</span><span class="t-right">Frankfurt</span><span class="crest shield" style="background:#1a1a1a">SGE</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></svg></span><div class="up-league"><strong>Serie A</strong><span>28 Oct, 11:45 PM</span></div><button class="bell" aria-label="Remind me: Napoli vs Roma" aria-pressed="false" data-remind="Napoli vs Roma"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/></svg></span><div class="up-league"><strong>Serie A</strong><span>28 Oct, 11:45 PM</span></div></div>
           <div class="up-teams"><span class="crest " style="background:#12a0d7">NAP</span><span>Napoli</span><span class="vs">vs</span><span class="t-right">Roma</span><span class="crest shield" style="background:#8e1f2f">ROM</span></div>
         </article>
       </div>
       <div class="upcoming-grid" data-day="oct29" role="tabpanel" hidden>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5l5 5-8.5 8.5-3-2-2-3z"/><path d="M8 16l-4 4"/><circle cx="18.5" cy="18.5" r="2"/></svg></span><div class="up-league"><strong>BPL</strong><span>29 Oct, 2:30 PM</span></div><button class="bell" aria-label="Remind me: Sylhet Strikers vs Rangpur Riders" aria-pressed="false" data-remind="Sylhet Strikers vs Rangpur Riders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4.5l5 5-8.5 8.5-3-2-2-3z"/><path d="M8 16l-4 4"/><circle cx="18.5" cy="18.5" r="2"/></svg></span><div class="up-league"><strong>BPL</strong><span>29 Oct, 2:30 PM</span></div></div>
           <div class="up-teams"><span class="crest shield" style="background:#e4572e">SYL</span><span>Sylhet Strikers</span><span class="vs">vs</span><span class="t-right">Rangpur Riders</span><span class="crest shield" style="background:#1c7c54">RAN</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>Premier League</strong><span>29 Oct, 5:30 PM</span></div><button class="bell" aria-label="Remind me: Liverpool vs Tottenham" aria-pressed="false" data-remind="Liverpool vs Tottenham"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.2l4 2.9-1.5 4.7h-5L8 10.1z"/><path d="M12 2.5v4.7M16 10.1l4.6-1.5M14.5 14.8l2.8 3.9M9.5 14.8l-2.8 3.9M8 10.1L3.4 8.6"/></svg></span><div class="up-league"><strong>Premier League</strong><span>29 Oct, 5:30 PM</span></div></div>
           <div class="up-teams"><span class="crest shield" style="background:#c8102e">LIV</span><span>Liverpool</span><span class="vs">vs</span><span class="t-right">Tottenham</span><span class="crest " style="background:#132257">TOT</span></div>
         </article>
         <article class="up-card">
-          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5l1.5 3.3 3.6.4-2.7 2.4.8 3.6L12 14.4l-3.2 1.8.8-3.6-2.7-2.4 3.6-.4z"/></svg></span><div class="up-league"><strong>UEFA Champions League</strong><span>29 Oct, 11:00 PM</span></div><button class="bell" aria-label="Remind me: Real Madrid vs PSG" aria-pressed="false" data-remind="Real Madrid vs PSG"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></button></div>
+          <div class="up-top"><span class="up-league-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5l1.5 3.3 3.6.4-2.7 2.4.8 3.6L12 14.4l-3.2 1.8.8-3.6-2.7-2.4 3.6-.4z"/></svg></span><div class="up-league"><strong>UEFA Champions League</strong><span>29 Oct, 11:00 PM</span></div></div>
           <div class="up-teams"><span class="crest " style="background:#c79a0a">RMA</span><span>Real Madrid</span><span class="vs">vs</span><span class="t-right">PSG</span><span class="crest " style="background:#004170">PSG</span></div>
         </article>
       </div>
@@ -174,12 +203,61 @@
   <button class="floating" aria-label="Open TV player">▰</button>
   <script src="app.js"></script>
   <script>
+    // ---- live match hero slider ----
+    (() => {
+      const slider = document.querySelector('.hero-slider');
+      if (!slider) return;
+      const track = slider.querySelector('.hero-track');
+      const slides = [...track.children];
+      const dots = [...slider.querySelectorAll('.hero-dot')];
+      const DELAY = 5000;
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let index = 0, timer = null, hover = false, focus = false;
+      const go = (i) => {
+        index = (i + slides.length) % slides.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((s, k) => { s.inert = k !== index; });
+        dots.forEach((d, k) => {
+          d.classList.remove('active'); d.removeAttribute('aria-current');
+          if (k === index) { void d.offsetWidth; d.classList.add('active'); d.setAttribute('aria-current', 'true'); }
+        });
+        restart();
+      };
+      const stop = () => { clearTimeout(timer); timer = null; };
+      const restart = () => {
+        stop();
+        const paused = reduce || hover || focus || document.hidden;
+        slider.classList.toggle('paused', paused);
+        if (!paused) timer = setTimeout(() => go(index + 1), DELAY);
+      };
+      slider.querySelector('.hero-arrow.prev').addEventListener('click', () => go(index - 1));
+      slider.querySelector('.hero-arrow.next').addEventListener('click', () => go(index + 1));
+      dots.forEach((d, k) => d.addEventListener('click', () => go(k)));
+      slider.addEventListener('mouseenter', () => { hover = true; restart(); });
+      slider.addEventListener('mouseleave', () => { hover = false; restart(); });
+      slider.addEventListener('focusin', () => { focus = true; restart(); });
+      slider.addEventListener('focusout', (e) => { if (!slider.contains(e.relatedTarget)) { focus = false; restart(); } });
+      slider.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+      });
+      document.addEventListener('visibilitychange', restart);
+      // swipe on touch screens
+      let startX = null;
+      track.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') startX = e.clientX; });
+      track.addEventListener('pointerup', (e) => {
+        if (startX === null) return;
+        const dx = e.clientX - startX; startX = null;
+        if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+      });
+      track.addEventListener('pointercancel', () => { startX = null; });
+      go(0);
+    })();
     document.querySelectorAll('[data-toast]').forEach((button) => button.addEventListener('click', () => showToast(button.dataset.toast)));
     document.querySelectorAll('.up-dates button').forEach((tab) => tab.addEventListener('click', () => {
       document.querySelectorAll('.up-dates button').forEach((t) => { const on = t === tab; t.classList.toggle('active', on); t.setAttribute('aria-selected', on); });
       document.querySelectorAll('.upcoming-grid').forEach((g) => { g.hidden = g.dataset.day !== tab.dataset.day; });
     }));
-    document.querySelectorAll('.bell').forEach((b) => b.addEventListener('click', () => { const on = b.classList.toggle('on'); b.setAttribute('aria-pressed', on); showToast(on ? `Reminder set: ${b.dataset.remind}` : 'Reminder removed'); }));
 
   </script>
 </body>

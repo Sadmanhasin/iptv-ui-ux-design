@@ -133,10 +133,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .up-league { flex: 1; min-width: 0; }
 .up-league strong { display: block; font-size: 15px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .up-league span { display: block; margin-top: 3px; font-size: 13px; color: var(--muted); }
-.bell { width: 32px; height: 32px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid #f5c2c0; border-radius: 8px; background: var(--red-soft); color: var(--red); transition: .15s ease; }
-.bell:hover { border-color: var(--red); }
-.bell.on { background: var(--red); border-color: var(--red); color: #fff; }
-.bell svg { width: 16px; height: 16px; }
 .up-teams { display: flex; align-items: center; gap: 12px; margin-top: 6px; padding: 0 8px 0 40px; font-size: 14px; font-weight: 700; color: var(--ink); }
 .up-teams span:not(.crest) { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .up-teams .t-right { text-align: right; margin-left: auto; }
@@ -331,3 +327,32 @@ button.meta-chip:hover { border-color: #cfcfcf; color: #111; }
   .footer-bottom { flex-direction: column; align-items: flex-start; padding: 16px 16px 90px; }
 }
 @media (prefers-reduced-motion: reduce) { .footer-live i { animation: none; } }
+
+/* ================= live match hero slider ================= */
+.hero-slider { position: relative; }
+.hero-viewport { overflow: hidden; border-radius: 16px; touch-action: pan-y; }
+.hero-track { display: flex; transition: transform .6s cubic-bezier(.22, .8, .24, 1); will-change: transform; }
+.hero-track .featured { flex: 0 0 100%; border-radius: 0; }
+.hero-arrow { position: absolute; top: 50%; z-index: 2; width: 40px; height: 40px; display: grid; place-items: center; margin-top: -20px; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; background: rgba(0,0,0,.35); color: #fff; backdrop-filter: blur(6px); opacity: .7; transition: opacity .2s ease, background .2s ease, transform .2s ease; }
+.hero-arrow.prev { left: 14px; }
+.hero-arrow.next { right: 14px; }
+.hero-slider:hover .hero-arrow, .hero-arrow:focus-visible { opacity: 1; }
+.hero-arrow:hover { background: var(--red); border-color: var(--red); transform: scale(1.06); }
+.hero-dots { position: absolute; right: 18px; bottom: 16px; z-index: 2; display: flex; gap: 6px; }
+.hero-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,.4); overflow: hidden; transition: width .3s ease, background .2s ease; }
+.hero-dot:hover { background: rgba(255,255,255,.7); }
+.hero-dot.active { width: 28px; background: rgba(255,255,255,.3); }
+.hero-dot span { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--red); }
+.hero-dot.active span { animation: hero-fill 5s linear forwards; }
+.hero-slider.paused .hero-dot.active span { animation-play-state: paused; }
+@keyframes hero-fill { to { width: 100%; } }
+.hero-slider :focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 900px) {
+  .hero-arrow { display: none; }
+  .hero-dots { left: 0; right: 0; bottom: 10px; justify-content: center; }
+  .hero-track .featured { padding-bottom: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-track { transition: none; }
+  .hero-dot.active span { animation: none; width: 100%; }
+}
